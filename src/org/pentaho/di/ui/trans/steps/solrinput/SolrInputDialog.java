@@ -71,6 +71,7 @@ import org.pentaho.di.ui.core.dialog.ErrorDialog;
 import org.pentaho.di.core.Const;
 import org.pentaho.di.core.Props;
 import org.pentaho.di.core.exception.KettleException;
+import org.pentaho.di.core.plugins.PluginAnnotationType;
 import org.pentaho.di.core.row.value.ValueMetaBase;
 import org.pentaho.di.i18n.BaseMessages;
 import org.pentaho.di.trans.TransPreviewFactory;
@@ -83,6 +84,7 @@ import org.pentaho.di.ui.core.widget.LabelTextVar;
 import org.pentaho.di.ui.core.widget.TableView;
 import org.pentaho.di.ui.core.widget.TextVar;
 import org.pentaho.di.ui.trans.step.BaseStepDialog;
+
 
 public class SolrInputDialog extends BaseStepDialog implements StepDialogInterface {
 
@@ -1027,7 +1029,8 @@ private void getInfo( SolrInputMeta in ) {
   }
 
   private void ok() throws KettleException {
-    if ( Const.isEmpty( wStepname.getText() ) ) {
+    //if ( Const.isEmpty( wStepname.getText() ) ) {
+	  if ( wStepname.getText().isEmpty()) {
       return;
     }
     stepname = wStepname.getText();

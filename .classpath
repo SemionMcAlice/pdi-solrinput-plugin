@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
-	<classpathentry kind="lib" path="lib/kettle-core-6.0.1.0-386.jar"/>
-	<classpathentry kind="lib" path="lib/metastore-6.0.1.0-386.jar"/>
-	<classpathentry kind="lib" path="lib/kettle-engine-6.0.1.0-386.jar"/>
-	<classpathentry kind="lib" path="lib/kettle-ui-swt-6.0.1.0-386.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="lib/swt-win32-3.3.0.3346.jar"/>
 	<classpathentry kind="lib" path="lib/commons-codec-1.10.jar"/>
 	<classpathentry kind="lib" path="lib/commons-collections4-4.1.jar"/>
@@ -13,12 +9,15 @@
 	<classpathentry kind="lib" path="lib/jcl-over-slf4j-1.5.5.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api-1.5.5.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-jdk14-1.5.5.jar"/>
-	<classpathentry kind="lib" path="lib/commons-io-2.1.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-simple-1.5.6.jar"/>
-	<classpathentry kind="lib" path="lib/httpclient-4.3.6.jar"/>
 	<classpathentry kind="lib" path="lib/httpmime-4.3.6.jar"/>
 	<classpathentry kind="lib" path="lib/solr-solrj-4.10.4.jar"/>
 	<classpathentry kind="lib" path="lib/httpcore-4.4.jar"/>
 	<classpathentry kind="lib" path="lib/noggit-0.5.jar"/>
+	<classpathentry kind="lib" path="lib/kettle-core-8.0.0.0-28.jar"/>
+	<classpathentry kind="lib" path="lib/kettle-engine-8.0.0.0-28.jar"/>
+	<classpathentry kind="lib" path="lib/kettle-ui-swt-8.0.0.0-28.jar"/>
+	<classpathentry kind="lib" path="lib/metastore-8.0.0.0-28.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

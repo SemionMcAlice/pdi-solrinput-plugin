@@ -53,7 +53,17 @@ import org.pentaho.di.core.exception.KettleStepException;
 import org.pentaho.metastore.api.IMetaStore;
 import org.w3c.dom.Node;
 
-@Step(id = "SolrInputStep", i18nPackageName = "org.pentaho.di.trans.steps.solrinput", name = "SolrInput.TypeLongDesc.SolrInput", description = "SolrInput.TypeTooltipDesc.SolrInput", categoryDescription = "i18n:org.pentaho.di.trans.step:BaseStep.Category.Input", image = "SolrInput.svg", documentationUrl = "http://wiki.pentaho.com")
+@Step(id = "TypeExitSolrInputStep"
+, i18nPackageName = "org.pentaho.di.trans.steps.solrinput"
+, name = "SolrInput.TypeLongDesc.SolrInput"
+//, name = "Solr Input"
+, description = "SolrInput.TypeTooltipDesc.SolrInput"
+//, description = "Solr Input"
+, categoryDescription = "i18n:org.pentaho.di.trans.step:BaseStep.Category.Transform"
+//, categoryDescription = "Input"
+, image = "SolrInput.svg"
+, documentationUrl = "http://wiki.pentaho.com"
+, casesUrl = "http://test")
 public class SolrInputMeta extends BaseStepMeta implements StepMetaInterface {
 
   private static Class<?> PKG = SolrInputMeta.class; // for i18n purposes
@@ -352,7 +362,8 @@ public class SolrInputMeta extends BaseStepMeta implements StepMetaInterface {
 	    remarks.add( cr );
 
 	    // check URL
-	    if ( Const.isEmpty( URL ) ) {
+	    //if ( Const.isEmpty( URL ) ) {
+	    if ( URL.isEmpty()) {
 	      cr =
 	        new CheckResult( CheckResult.TYPE_RESULT_ERROR, BaseMessages.getString(
 	          PKG, "SolrInputMeta.CheckResult.NoURL" ), stepMeta );

@@ -385,7 +385,8 @@ public class SolrInput extends BaseStep implements StepInterface {
 	      }
 	      // check url
 	      String realURL = environmentSubstitute( meta.getURL() );
-	      if ( Const.isEmpty( realURL ) ) {
+	      //if ( Const.isEmpty( realURL ) ) {
+	      if (realURL.isEmpty()) {
 	        log.logError( BaseMessages.getString( PKG, "SolrInput.UsernameMissing.Error" ) );
 	        return false;
 	      }
